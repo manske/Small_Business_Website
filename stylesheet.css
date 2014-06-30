@@ -1,0 +1,152 @@
+html {
+	height: 100%;
+}
+body {
+	font-family: sans-serif;
+	padding: 0px;
+	margin: 0px;
+	min-height: 100%;
+}
+#thebackground {
+	z-index: -1;
+}
+ .image {
+	position: fixed;
+	overflow: hidden;
+	top: 0px
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	z-index: -1
+}
+.tengo {
+	position: absolute;
+	width: 100%;	
+
+}
+#blurimage {
+	position: fixed;
+	margin-top: 150px;
+
+	z-index: 0;
+}
+#blur {
+	position: relative;
+	top: -150px;
+	filter: blur(9px) brightness(.5);
+	-webkit-filter: blur(9px) brightness(.5);
+}
+#text {
+	position: absolute;
+	color: white;
+	margin: 175px 10px 0px 300px;
+}
+#text p {
+	font-family: serif;
+}
+@media screen and (max-aspect-ratio: 3/2) { 
+	.image {
+	position: absolute;
+	top: 0px
+	left: 0px;
+	height: 130%;
+	width: 100%;
+	margin:	0px;
+	z-index: -1;
+	overflow: hidden;
+}
+	.tengo {
+		position: absolute;
+		height: 100%;
+		width: auto;
+	}
+}
+#title {
+	position: fixed;
+	width: 552px;
+	height: 103px;
+	left: 50%;
+	top: 10px;
+	margin-left: -161px;
+	border: 3px solid white;
+	text-align: center;
+
+}
+.title {
+	color: white;
+	font-size: 70px;
+	display: inline-block;
+	vertical-align: middle;
+}
+#tracks {
+	font-family: serif;
+	font-size: 76px;
+	margin-left: 7px;
+}
+#wax {
+	margin-right: 5px;
+}
+#backslash {
+	font-size: 90px;
+	color: white;
+}
+a:link {
+	color: #707070;
+	text-decoration: none;
+}
+a:visited {
+	color: #707070;
+	text-decoration: none;
+}
+a:hover {
+	color: white;
+}
+section {
+	position: fixed;
+	margin: 0px 0px 0px -5px;
+	padding: 50px 0px 0px 10px;
+	height: 100%;
+	width: 230px;
+	background-color: #333333;
+	background-image: linear-gradient(
+		to left, rgba(0, 0, 0, .3) , rgba(0, 0, 0, 0) 15%
+		);
+}
+hr {
+	margin: 0px 0px 0px -10px;
+}
+.top {
+	border: 1px solid #292929;
+
+}
+
+.bottom {
+	border: 1px solid #242424;
+}
+.footertext {
+	padding: 10px;
+	font-size: 30px;
+	font-weight: lighter;
+}
+#victor {
+	position: fixed;
+	height: 60px;
+	bottom: 0px;
+}
+.social {
+	display: inline-block;
+	vertical-align: middle;
+	height: 60px;
+	width: 60px;
+	overflow: hidden;
+}
+#twitter {
+	height: 60px;
+	width: 60px;
+}
+#weibo {
+	height: 67%;
+	margin-top: 8px;
+	margin-left: 3px;
+}

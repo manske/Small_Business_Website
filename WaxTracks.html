@@ -3,41 +3,51 @@
 	<head>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css">
 		<title>WAXTRACKS</title>
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="app.js"></script>
 	</head>
 	<body>
 		<div id="thebackground">
-			<div class="image" id="blurimage" >
-				<img class="tengo" id="blur" src="bravo.jpg">
+			<div class="image thingtohide" id="blurimage" >
+				<img class="theimg" id="blur" src="IMAGES/BACKGROUND/bravo.jpg">
 				
 			</div>
 			
 			<div class="image">
-				<img class="tengo" src="bravo.jpg">
+				<img class="theimg" src="IMAGES/BACKGROUND/bravo.jpg">
 			</div>
 		</div>
-		<div id="text">
-			<h2>Wax Tracks</h2>
-			<p>Just a Record Store trying to live the American Dream...</p>
-
+		<div class="thingtohide" id="text">
+			<div id="container">
+				<div class="contained" id="one">
+					<hr>
+					<p id="AmericanDream">
+						A record store just trying to live the American Dream...
+					</p>
+					<hr>
+				</div>
+				<div class="contained" id="two">
+					<div class="album"></div>
+					<div class="album"></div>
+					<div class="album"></div>
+					<div class="album"></div>
+					<div class="album"></div>
+					<div class="album"></div>
+				</div>
+				<div class="contained" id="three">
+					<p>
+						More text in a Box
+					</p>
+				</div>
+			</div>
 		</div>
 		<div id="title"><div class="title" id="wax">WAX</div><div class="title" id="backslash">//</div><div class="title" id="tracks">TRACKS</div></div>
-		<section>
-				<div id="panel">
-					<div class="footertext" id="homediv"><a href="" id="home" class="textlink">HOME</a></div> 
-					<hr class="top">
-					<hr class="bottom">
-					<div class="footertext"	id="storediv"><a href="" id="store" class="textlink">STORE</a></div>
-					<hr class="top">
-					<hr class="bottom">
-					<div class="footertext" id="locationdiv"><a href="" id="location" class="textlink">LOCATION</a></div>
-					<hr class="top">
-					<hr class="bottom">
-					<div class="footertext" id="contactdiv"><a href="" id="contact" class="textlink">CONTACT US</a></div>
-				</div>
-				<div id="victor">
-				<a href="" class="sociallink"><div class="social" id="twitterdiv"><img id="twitter"src="twitter.png"></div></a>	
-				<a href="" class="sociallink"><div class="social" id="weibodiv"><img id="weibo" src="weibo.png"></div></a>
-				</div>
+		<section id="controlsections">
+			<div class="controls" id="theplus"><div id="thex">+</div></div>
+			<div class="controls other">HOME</div>
+			<div class="controls other">STORE</div>
+			<div class="controls other">LOCATION</div>
+			<div class="controls other">CONTACT US</div>
 		</section>
 					
 	</body>

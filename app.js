@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$("#thex").click(function() {
 		$( "#thex" ).toggleClass( "rotate" );
-		$( "#home" ).toggleClass( "show" )
+		$( ".controls.other" ).toggleClass( "show" )
 
 	});
 	$("#home").click(function() {

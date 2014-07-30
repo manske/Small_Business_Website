@@ -55,6 +55,7 @@ body {
 #one {
 	background-color: rgba(0, 139, 139, .5);
 	text-align: center;
+	padding: 200px 0px;
 }
 #one h2 {
 	margin: 0px 0px 10px 0px;
@@ -64,16 +65,39 @@ body {
 #one hr {
 	border: 0;
 	height: 0;
-	border-top: 1px solid white;
+	border-top: 2px solid white;
 }
 #AmericanDream {
-	margin: 30px 0px 30px 0px;
+	margin: 20px 0px 20px 0px;
 	font-size: 50px;
-	font-weight: lighter;
 }
 #two {
 	background-color: rgba(139, 0, 0, .5);
-	height: 400px;
+	padding: 0px;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+#two p {
+	text-align: center;
+	font-size: 30px;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+#two hr {
+	border: 0;
+	height: 0;
+	border-top: 2px solid white;
+	margin-top: 0px;
+}
+#albumholder {
+	width: 1223px;
+	margin: 20px auto 20px auto;
+}
+@media all and (max-width: 1240px) {
+	#albumholder {
+		width: 610px;
+		
+	}
 }
 .album {
 	height: 200px;
@@ -81,27 +105,28 @@ body {
 	display: inline-block;
 	background-size: cover; 
 }
-#two div:first-child {
+#albumholder div:first-child {
 	background-image: url('IMAGES/ALBUM/ULTRAVIOLENCE.png');
 }
-#two div:nth-child(2) {
+#albumholder div:nth-child(2) {
 	background-image: url('IMAGES/ALBUM/ALWAYS.jpg');
 }
-#two div:nth-child(3) {
+#albumholder div:nth-child(3) {
 	background-image: url('IMAGES/ALBUM/STONE.jpg');
 }
-#two div:nth-child(4) {
+#albumholder div:nth-child(4) {
 	background-image: url('IMAGES/ALBUM/BLUE.jpg');
 }
-#two div:nth-child(5) {
+#albumholder div:nth-child(5) {
 	background-image: url('IMAGES/ALBUM/WAVE.png');
 }
-#two div:nth-child(6) {
+#albumholder div:nth-child(6) {
 	background-image: url('IMAGES/ALBUM/YELLOW.jpg');
 }
 #three {
 	background-color: rgba(0, 206, 209, .5);
 	height: 200px;
+	text-align: center;
 }
 
 @media screen and (max-aspect-ratio: 3/2) { 
@@ -170,20 +195,23 @@ body {
 .controls.other {
 	display: none;
 }
-.controls.other.hide {
-	visibility: visible;
+#home {
+	display: none;
+}
+#home.show {
+	display: inline-block;
 }
 #thex {
 	position: relative;
 	bottom: 2px;
 	padding-bottom: 2px;
+	display: inline-block;
 }
 #thex.rotate {
 	transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -moz-transform:rotate(45deg);
-    position: relative;
-    left: 2px;
     font-size: 33px;
     margin-bottom: -3px;
+    margin-right: -1px;
 }

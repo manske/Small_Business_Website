@@ -1,15 +1,16 @@
 $(document).ready(function() {
 	$("#thex").click(function() {
 		$( "#thex" ).toggleClass( "rotate" );
-		$( ".controls.other" ).toggleClass( "show" )
+		$( ".controls.other" ).toggleClass( "show" );
+		$( ".controlsections" ).toggleClass( "longer" );
 
 	});
 	$("#home").click(function() {
   		if ( $( ".thingtohide:first" ).is( ":hidden" ) ) {
-    		$( ".thingtohide" ).show();
+    		$( ".thingtohide" ).fadeIn(200);
  	 	} 
  	 	else {
-    		$( ".thingtohide" ).hide();
+    		$( ".thingtohide" ).fadeOut(200);
  	 	}	
   });
 	

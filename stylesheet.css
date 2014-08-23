@@ -142,6 +142,7 @@ body {
 		height: 100%;
 		width: auto;
 	}
+	
 }
 #title {
 	position: fixed;
@@ -173,21 +174,35 @@ body {
 	font-size: 90px;
 	color: white;
 }
-#controlsections {
+.controlsections {
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	margin: 42px 0px 0px -5px;
+	margin: 38px 0px 0px -5px;
 	padding-right: 5px;
 	box-shadow: inset 0 0 10px rgb(40, 40, 40);
 	background-color: rgba(0, 0, 0, .26);
+	overflow: hidden;
+	display: inline-block;
+}
+.controlsections.longer {
+	width: 100%;
 }
 .controls {
-	padding: 5px 15px 5px 20px;
+	padding: 10px 15px 10px 20px;
 	font-size: 30px;
 	color: white;
 	text-align: center;
 	display: inline-block;
+}
+#divtocenter {
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	margin-left: -346px;
+	padding: 0px;
+	display: inline-block;
+
 }
 .controls:hover {
 	color: rgb(32, 178, 170);
@@ -197,6 +212,9 @@ body {
 }
 .controls.other.show {
 	display: inline-block;
+}
+#theplus {
+	padding-left: 22px;
 }
 #thex {
 	position: relative;
